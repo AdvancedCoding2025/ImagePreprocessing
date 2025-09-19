@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Vintage Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Vintage Library</h1>
+    <span class="subtitle">A Touch of Class & Nostalgia</span>
+  </header>
+  <main>
+    <section class="top-controls">
+      <form class="add-book-form" onsubmit="addBook(event)">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <button type="submit">Add Book</button>
+      </form>
+      <div class="search-section">
+        <input type="text" id="search" placeholder="Search title or author">
+        <button onclick="searchBook()">Search</button>
+      </div>
+    </section>
+    <div id="book-grid" class="book-grid"></div>
+  </main>
+  <footer>
+    <span>&copy; 2025 Vintage Library UI</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
